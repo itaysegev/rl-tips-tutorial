@@ -5,7 +5,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 		<title>RL Tips and Tricks</title>
-
+ 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
 		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
@@ -711,38 +711,6 @@
 						 	do not have to look into 10 different to understand what is happening
 						</aside>
 					</section>
-
-					
-
-					<section>
-						<h4>35 lines of code</h4>
-						<div class="row">
-							<div class="col-xs-12 small-text">
-								<div>
-									\[\begin{aligned}
-									q^{\text{des}}_i(t) &amp;= \textcolor{#006400}{a_i} \cdot \sin(\theta_i(t) + \textcolor{#5f3dc4}{\varphi_i}) + \textcolor{#6d071a}{b_i} \\
-									\dot{\theta_i}(t)  &amp;= \begin{cases}
-										\textcolor{#0b7285}{\omega_\text{swing}}  &amp;\text{if $\sin(\theta_i(t) + \textcolor{#5f3dc4}{\varphi_i})) > 0$}\\
-										\textcolor{#862e9c}{\omega_\text{stance}}  &amp;\text{otherwise.}
-									\end{cases}
-
-									\end{aligned} \]
-								</div>
-							</div>
-							<div class="col-xs-12 fragment">
-								<a href="https://gist.github.com/araffin/25159d668e9bad41bf31a595add22c27" target="_blank">
-									<img src="images/minimal_swimmer.png" class="shadow" style="max-width: 50%" alt="">
-								</a>
-							</div>
-						</div>
-						<aside class="notes">
-						 	Core idea: one oscillator per joint,
-							share frequency between joints.
-						</aside>
-					</section>
-
-					
-
 				</section>
 
 			
